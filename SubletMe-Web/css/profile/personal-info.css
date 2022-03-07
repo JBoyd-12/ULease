@@ -1,0 +1,325 @@
+/*Global variables*/
+:root {
+  --ulease-blue: #0d6efd;
+}
+
+/* Classes */
+.titleName {
+  padding: 0 60px;
+}
+.navbar {
+  padding: 1rem 0 1rem;
+}
+.find {
+  padding: 8px 60px;
+}
+
+/******** Dropdown Menu *********/
+.dropdown-menu {
+  width: 250px;
+  left: -270%;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(235, 232, 232);
+}
+
+/******** Information div's *********/
+.info-box {
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: #fff;
+  border: 2px solid #ddd;
+  box-shadow: 7px 7px 7px rgb(140, 185, 252);
+  border-radius: 15px;
+}
+
+.form-label {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5f6368;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+#input-label {
+  margin-top: 60px;
+  margin-left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  color: #999;
+  transition: 0.2s;
+}
+
+.input-box {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #999;
+  outline: none;
+  width: 75%;
+  font-size: 18px;
+}
+.input-box:focus {
+  border-color: var(--ulease-blue);
+}
+.input-box:focus + #input-label {
+  color: var(--ulease-blue);
+}
+.input-box:focus + #input-label,
+.input-box.not-empty + #input-label {
+  top: -13px;
+  left: 5px;
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+.cancel-btn:hover {
+  background-color: rgb(241, 241, 241);
+  color: var(--ulease-blue);
+}
+
+/******** Name page *********/
+#lname-label {
+  margin-top: 126px;
+  margin-left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  color: #999;
+  transition: 0.2s;
+}
+#lname-box:focus {
+  border-color: var(--ulease-blue);
+}
+#lname-box:focus + #lname-label {
+  color: var(--ulease-blue);
+}
+#lname-box:focus + #lname-label,
+#lname-box.not-empty + #lname-label {
+  top: -13px;
+  left: 5px;
+}
+/******** Password page *********/
+.logo {
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.container {
+  border: 1px solid #999;
+  border-radius: 7px;
+  width: fit-content;
+  height: 30px;
+}
+
+.password-box {
+  margin: auto;
+  position: relative;
+  width: 400px;
+  height: 390px;
+  background: #fff;
+  border: 2px solid #ddd;
+  box-shadow: 7px 7px 7px rgb(140, 185, 252);
+  border-radius: 15px;
+}
+
+#password-input {
+  margin-top: 5px;
+  margin-left: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #999;
+  outline: none;
+  width: 80%;
+  font-size: 18px;
+}
+
+#password-label {
+  margin-top: 192px;
+  margin-left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  color: #999;
+  transition: 0.2s;
+}
+
+#password-input:focus {
+  border-color: var(--ulease-blue);
+}
+#password-input:focus + #password-label {
+  color: var(--ulease-blue);
+}
+#password-input:focus + #password-label,
+#password-input.not-empty + #password-label {
+  top: -13px;
+  left: 5px;
+}
+.toggle-password {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  color: grey;
+  font-size: 20px;
+  right: 4.5rem;
+  top: 12.9rem;
+}
+
+.forgot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 22px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+/******** New Password Page *********/
+.newPassword-box {
+  margin: auto;
+  position: relative;
+  width: 500px;
+  height: 350px;
+  background: #fff;
+  border: 2px solid #ddd;
+  box-shadow: 7px 7px 7px rgb(140, 185, 252);
+  border-radius: 15px;
+}
+
+#newPassword-input {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #999;
+  outline: none;
+  width: 85%;
+  font-size: 18px;
+}
+#newPassword-label {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  color: #999;
+  transition: 0.2s;
+}
+#newPassword-input:focus {
+  border-color: var(--ulease-blue);
+}
+#newPassword-input:focus + #newPassword-label {
+  color: var(--ulease-blue);
+}
+#newPassword-input:focus + #newPassword-label,
+#newPassword-input.not-empty + #newPassword-label {
+  top: -13px;
+  left: 5px;
+}
+
+.toggle-newPassword {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  color: grey;
+  font-size: 20px;
+  right: 4.5rem;
+  top: 2.2rem;
+}
+
+/*re-enter password*/
+#rePassword-input {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 1px solid #999;
+  outline: none;
+  width: 85%;
+  font-size: 18px;
+}
+#rePassword-label {
+  margin-top: 169px;
+  margin-left: 20px;
+  padding: 0 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background-color: #fff;
+  color: #999;
+  transition: 0.2s;
+}
+#rePassword-input:focus {
+  border-color: var(--ulease-blue);
+}
+#rePassword-input:focus + #rePassword-label {
+  color: var(--ulease-blue);
+}
+#rePassword-input:focus + #rePassword-label,
+#rePassword-input.not-empty + #rePassword-label {
+  top: -13px;
+  left: 5px;
+}
+
+.toggle-rePassword {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  color: grey;
+  font-size: 20px;
+  right: 4.5rem;
+  top: 11.5rem;
+}
+/* not something you want to do. Bootstrap navbar was blocking the change. */
+
+.find:hover {
+  color: var(--ulease-blue) !important;
+}
+
+.container-fluid {
+  padding: 0.5% 2%;
+}
+
+.nav-item {
+  padding: 0 5px;
+}
+
+.length {
+  height: 100px;
+}
+
+.fontawesome:hover {
+  color: var(--ulease-blue);
+}
+
+h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 400;
+}
+
+.fa-arrow-left {
+  padding-right: 10px;
+}
+
+.line {
+  margin-left: -30px;
+  margin-right: -30px;
+}
